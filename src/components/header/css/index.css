@@ -1,0 +1,40 @@
+#root {
+  position: relative;
+}
+#root .header {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#root .header .header-wrapper {
+  margin: 0 36px 0px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+#root .header .header-wrapper > .img > img {
+  width: 189px;
+  height: 32px;
+}
+#root .header .header-wrapper > .header-buy {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 23px;
+  width: 184px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#root .header .header-wrapper > .header-buy > img {
+  width: 24px;
+  margin-right: 11px;
+}
+#root .header .header-wrapper > .header-buy > .text {
+  padding-top: 3px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}/*# sourceMappingURL=index.css.map */
