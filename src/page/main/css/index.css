@@ -723,6 +723,9 @@
     background: #ebe9ee;
     height: 3800px;
   }
+  #root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-content-mb {
+    margin-top: 70px;
+  }
   #root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-content-mb .section4-content-box-mb {
     padding-top: 98px;
     display: flex;
