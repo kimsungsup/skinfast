@@ -1,151 +1,108 @@
-#root .main > .main-wrapper {
+#root .main-page .main-wrapper {
   width: 100%;
   position: relative;
 }
-#root .main > .main-wrapper > .section1 {
+#root .main-page .main-wrapper .main-section1 {
   width: 100%;
-  background-image: url(/public/assets/main/main-section.png);
-  background-image: -webkit-image-set(url(/public/assets/main/main-section.png) 1x, url(/public/assets/main/main-section@2x.png) 2x, url(/public/assets/main/main-section@3x.png) 3x);
+  background-image: url(/src/page/img/section1-background.png);
+  background-image: -webkit-image-set(url(/src/page/img/section1-background.png) 1x, url(/src/page/img/section1-background@2x.png) 2x, url(/src/page/img/section1-background@3x.png) 3x);
   height: 744px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#root .main > .main-wrapper > .section1 .section1-set-background {
+#root .main-page .main-wrapper .main-section1 .main-section1-background {
   position: absolute;
   top: 330px;
   width: 100%;
   height: 416px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(360deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   text-align: center;
 }
-#root .main > .main-wrapper > .section1 .section1-set-background > .text {
+#root .main-page .main-wrapper .main-section1 .main-section1-background .section1-text {
   padding-top: 239px;
   font-weight: 700;
   font-size: 40px;
   line-height: 75px;
 }
-#root .main > .main-wrapper > .section1 .section1-set-background > .sub {
+#root .main-page .main-wrapper .main-section1 .main-section1-background .section1-sub-text {
   font-weight: 700;
   font-size: 25px;
 }
-#root .main > .main-wrapper > .section2 {
+#root .main-page .main-wrapper .main-section2 {
   padding-top: 73px;
   padding-bottom: 52px;
 }
-#root .main > .main-wrapper > .section2 > .wrapper {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper {
   width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-scroll {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .scroll > .scroll-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-scroll .section2-scroll-wrapper {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   background: #f4f5f5;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .scroll > .scroll-wrapper > img {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-scroll .section2-scroll-wrapper > img {
   width: 32px;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .scroll > .text {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-scroll > .text {
   margin-top: 5px;
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
   color: #a9a9a9;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .logo {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-logo {
   margin-top: 87px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .logo > img {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-logo > img {
   width: 385px;
   text-align: center;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .section2-content {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-content {
   margin-top: 71px;
   display: grid;
   grid-template-columns: repeat(3, 360px);
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .section2-content > .box {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-content .section2-content-box {
   height: 275px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .section2-content > .box > img {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-content .section2-content-box > img {
   width: 137px;
   height: 137px;
   margin-bottom: 22px;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .section2-content > .box > .title {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-content .section2-content-box > .title {
   font-weight: 700;
-  line-height: 250%;
+  margin: 35px 0px 15px 0px;
   font-size: 30px;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .section2-content > .box > .sub {
+#root .main-page .main-wrapper .main-section2 .section2-wrapper .section2-content .section2-content-box > .sub {
   font-weight: 500;
   font-size: 20px;
 }
-#root .main > .main-wrapper > .section2 > .wrapper > .element {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section2 .section2-wrapper > .section2-head {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   margin-top: 145px;
   width: 143px;
@@ -155,214 +112,124 @@
   font-weight: 700;
   font-size: 16px;
 }
-#root .main > .main-wrapper > .section3 {
+#root .main-page .main-wrapper .main-section3 {
   background: #ebe9ee;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
-#root .main > .main-wrapper > .section3 > .section3-top {
+#root .main-page .main-wrapper .main-section3 .section3-top-img {
   position: absolute;
   top: -2px;
 }
-#root .main > .main-wrapper > .section3 > .section3-green {
+#root .main-page .main-wrapper .main-section3 .section3-background-green {
   width: 100%;
   height: 745px;
   border: 1px solid transparent;
   border-top: 50px;
   background: #2b9649;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   width: 1060px;
 }
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > img {
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper > img {
   top: -40px;
   z-index: 10;
   width: 180px;
   height: 1130px;
   position: absolute;
 }
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .left-arrow {
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper > .left-arrow {
   position: absolute;
-  top: 320px;
-  left: 190px;
+  top: 350px;
+  left: 220px;
 }
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .right-arrow {
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper > .right-arrow {
   position: absolute;
-  top: 430px;
-  right: 190px;
+  top: 410px;
+  right: 220px;
 }
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-1 {
-  text-align: center;
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper .section3-content {
   position: absolute;
-  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 392px);
+  row-gap: 123px;
+  -moz-column-gap: 400px;
+       column-gap: 400px;
   top: 184px;
 }
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-1 > .text {
-  font-weight: 700;
-  font-size: 30px;
-  color: white;
-  font-family: "GmarketSans";
-  margin: 5px 0 10px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-1 > .sub {
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-1 > img {
-  width: 92px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-2 {
-  width: 253px;
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper .section3-content .section3-content-box {
   text-align: center;
-  position: absolute;
-  left: 0;
-  top: 457px;
 }
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-2 > .text {
-  margin: 5px 0 10px;
-  font-weight: 600;
-  font-size: 30px;
-  color: white;
-  font-family: "GmarketSans";
-  white-space: nowrap;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-2 > .sub {
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-2 > img {
-  width: 86px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-3 {
-  text-align: center;
-  position: absolute;
-  right: 0;
-  top: 234px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-3 > .text {
-  font-weight: 600;
-  font-size: 30px;
-  color: white;
-  font-family: "GmarketSans";
-  margin: 5px 0 10px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-3 > .sub {
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-3 > img {
-  width: 66px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-4 {
-  width: 290px;
-  text-align: center;
-  position: absolute;
-  right: 0;
-  top: 507px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-4 > .text {
-  font-weight: 600;
-  font-size: 30px;
-  color: white;
-  font-family: "GmarketSans";
-  margin: 5px 0 10px;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-4 > .sub {
-  font-weight: 500;
-  font-size: 20px;
-  color: white;
-}
-#root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-4 > img {
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper .section3-content .section3-content-box > img {
+  margin-bottom: 15px;
   width: 72px;
 }
-#root .main > .main-wrapper > .section3 > .section3-bottom > img {
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper .section3-content .section3-content-box > .text {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: white;
+}
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper .section3-content .section3-content-box > .sub {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+}
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper .section3-content .sodium {
+  margin-top: 40px;
+}
+#root .main-page .main-wrapper .main-section3 .section3-background-green .section3-wrapper .section3-content .sodium > img {
+  width: 66px;
+}
+#root .main-page .main-wrapper .main-section3 .section3-bottom-img > img {
   width: 100%;
 }
-#root .main > .main-wrapper > .section4 {
+#root .main-page .main-wrapper .main-section4 {
   height: 1659px;
 }
-#root .main > .main-wrapper > .section4 > .wrapper {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper {
   height: 961px;
   background: #eae8ed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-back {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-back-img {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-back > .text {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-back-img > .text {
   padding-top: 133px;
   text-align: center;
   font-weight: 300;
   font-size: 50px;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-back > .text > span {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-back-img > .text > span {
   font-weight: 400;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-back > img {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-back-img > img {
   margin-top: 115px;
   width: 436px;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-back-set {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-gradation {
   width: 100%;
   position: absolute;
   top: 961px;
   height: 698px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e8e6eb), to(rgba(235, 233, 238, 0)));
   background: linear-gradient(180deg, #e8e6eb 0%, rgba(235, 233, 238, 0) 100%);
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-content {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-content {
   position: absolute;
   z-index: 10;
   display: grid;
@@ -370,17 +237,11 @@
   top: 817px;
   grid-template-columns: repeat(3, 364px);
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-content > .box > .title {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-content .section4-content-box > .title {
   margin-bottom: 21px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 349px;
   height: 67px;
   background: rgba(0, 0, 0, 0.8);
@@ -390,7 +251,7 @@
   font-size: 23px;
   position: relative;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-content > .box .title:after {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-content .section4-content-box .title:after {
   border-top: 40px solid rgba(0, 0, 0, 0.8);
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
@@ -400,124 +261,91 @@
   bottom: 0px;
   margin-bottom: -40px;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-content > .box > img {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-content .section4-content-box > img {
   margin-bottom: 44px;
 }
-#root .main > .main-wrapper > .section4 > .wrapper > .section4-content > .box > .sub {
+#root .main-page .main-wrapper .main-section4 .section4-wrapper .section4-content .section4-content-box > .sub {
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
 }
-#root .main > .main-wrapper > .section5 {
+#root .main-page .main-wrapper .main-section5 {
   padding-top: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#root .main > .main-wrapper > .section5 > .element {
+#root .main-page .main-wrapper .main-section5 .section5-head {
   width: 177px;
   height: 38px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 23px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-weight: 700;
   font-size: 16px;
 }
-#root .main > .main-wrapper > .section5 > .text {
+#root .main-page .main-wrapper .main-section5 .section5-text {
   margin-top: 60px;
   font-weight: 300;
   font-size: 50px;
   line-height: 75px;
 }
-#root .main > .main-wrapper > .section5 > .text > span {
+#root .main-page .main-wrapper .main-section5 .section5-text > span {
   font-weight: 400;
   width: 20px;
 }
-#root .main > .main-wrapper > .section5 > .text > .set {
+#root .main-page .main-wrapper .main-section5 .section5-text > .set {
   -webkit-text-emphasis: filled #2b9649;
           text-emphasis: filled #2b9649;
 }
-#root .main > .main-wrapper > .section5 > .section5-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section5 > .section5-content {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   position: relative;
   margin-top: 80px;
 }
-#root .main > .main-wrapper > .section5 > .section5-content > .text-box {
+#root .main-page .main-wrapper .main-section5 > .section5-content .section5-text-box {
   width: 630px;
   height: 139px;
   background: #2b9649;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#root .main > .main-wrapper > .section5 > .section5-content > .text-box > .text {
+#root .main-page .main-wrapper .main-section5 > .section5-content .section5-text-box > .text {
   text-align: center;
   color: white;
   font-weight: 400;
   font-size: 30px;
   line-height: 45px;
 }
-#root .main > .main-wrapper > .section5 > .section5-content > .text-box > .text > span {
-  font-weight: 500;
+#root .main-page .main-wrapper .main-section5 > .section5-content .section5-text-box > .text > span {
+  font-weight: 700;
 }
-#root .main > .main-wrapper > .section5 > .section5-content > img {
+#root .main-page .main-wrapper .main-section5 > .section5-content > img {
   top: 135px;
   position: absolute;
   width: 406px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
 }
-#root .main > .main-wrapper > .section5 > .section5-content > .section5-back {
+#root .main-page .main-wrapper .main-section5 > .section5-content .section5-background {
   position: relative;
   width: 100%;
   height: 610px;
   margin-top: 420px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ef9279), color-stop(42.21%, #eac5a6), color-stop(90.32%, #ffffff));
   background: linear-gradient(180deg, #ef9279 0%, #eac5a6 42.21%, #ffffff 90.32%);
   z-index: 10;
 }
-#root .main > .main-wrapper > .section5 > .section5-content > .back-circle {
+#root .main-page .main-wrapper .main-section5 > .section5-content .section5-back-circle {
   top: 430px;
   position: absolute;
   width: 441px;
@@ -525,50 +353,32 @@
   background: #ef9279;
   border-radius: 50%;
 }
-#root .main > .main-wrapper > .section5 > .section5-content > .section5-set-circle {
+#root .main-page .main-wrapper .main-section5 > .section5-content .section5-circle {
   position: absolute;
   top: 357px;
   z-index: 100;
 }
-#root .main > .main-wrapper > .section5 > .section5-content > .section5-set {
+#root .main-page .main-wrapper .main-section5 > .section5-content .section5-set {
   position: absolute;
   top: 600px;
   z-index: 20;
 }
-#root .main > .main-wrapper > .section6 > .wrapper {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper {
   width: 1326px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-text {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-text {
   margin-bottom: 62px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-text > .element {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-text .section6-head {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -578,47 +388,32 @@
   border-radius: 23px;
   margin-bottom: 32px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-text > .text {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-text > .text {
   font-weight: 700;
   font-size: 30px;
   line-height: 75px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-text > .sub {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-text > .sub {
   font-weight: 500;
   font-size: 20px;
   line-height: 35px;
   text-align: center;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-content {
   display: flex;
   gap: 26px;
   position: relative;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-content > .box {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-content .section6-content-box {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-content > .box > .title {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-content .section6-content-box > .title {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 20px;
   color: white;
@@ -626,50 +421,46 @@
   height: 52px;
   background: rgba(43, 150, 73, 0.6);
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-content > .box > img {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-content .section6-content-box > img {
   margin-bottom: 11px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-content > .box > .sub {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-content .section6-content-box > .sub {
   font-weight: 500;
   font-size: 20px;
   line-height: 35px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail {
   margin-top: 184px;
   width: 100%;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .text {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail > .text {
   font-weight: 700;
   font-size: 30px;
   line-height: 75px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper {
   display: flex;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-img {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper .section6-img {
   width: 484px;
   height: 78px;
   margin-left: 129px;
   margin-right: 172px;
   margin-top: 72px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-img > img {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper .section6-img > img {
   width: 78px;
   height: 484px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-content-detail {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper .section6-content-detail {
   padding-bottom: 334px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-content-detail > .box {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper .section6-content-detail .section6-detail-box {
   width: 951px;
   border-top: 1px solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-content-detail > .box > .text {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper .section6-content-detail .section6-detail-box > .text {
   margin-left: 10px;
   width: 152px;
   margin-right: 22px;
@@ -678,144 +469,113 @@
   font-size: 25px;
   line-height: 35px;
 }
-#root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-content-detail > .box > .sub {
+#root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper .section6-content-detail .section6-detail-box > .sub {
   padding: 18px 0px 19px 0px;
   font-weight: 400;
   font-size: 25px;
   line-height: 35px;
 }
-#root .main > .main-wrapper > .section7 > .section7-back {
+#root .main-page .main-wrapper .main-section7 .section7-background {
   position: relative;
   width: 100%;
-  background-image: url(/public/assets/main/main-section.png);
-  background-image: -webkit-image-set(url(/public/assets/main/main-section.png) 1x, url(/public/assets/main/main-section@2x.png) 2x, url(/public/assets/main/main-section@3x.png) 3x);
+  background-image: url(/src/page/img/section1-background.png);
+  background-image: -webkit-image-set(url(/src/page/img/section1-background.png) 1x, url(/src/page/img/section1-background@2x.png) 2x, url(/src/page/img/section1-background@3x.png) 3x);
   height: 1164px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color {
   width: 100%;
   height: 1164px;
   position: absolute;
-  background: -webkit-gradient(linear, left top, right top, color-stop(41.53%, #2b9649), to(rgba(43, 150, 73, 0)));
   background: linear-gradient(90deg, #2b9649 41.53%, rgba(43, 150, 73, 0) 100%);
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper {
   padding-top: 49px;
   padding-left: 66px;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .title {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper > .title {
   font-weight: 700;
   font-size: 30px;
   line-height: 75px;
   color: white;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .text {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper > .text {
   font-weight: 300;
   font-size: 50px;
   line-height: 75px;
   color: white;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .text > span {
-  margin-bottom: 20px;
-  font-weight: 300;
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper > .text > span {
+  font-weight: 400;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-content {
   margin-top: 55px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 27px;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-content .section7-content-input {
   padding-left: 31px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 1px solid white;
   width: 704px;
   height: 90px;
   border-radius: 11px;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > .text {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-content .section7-content-input > .text {
   width: 87px;
   margin-right: 32px;
   font-weight: 700;
   font-size: 25px;
   color: white;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input::-webkit-input-placeholder {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-content .section7-content-input > input::-moz-placeholder {
   font-weight: 400;
   font-size: 25px;
   color: rgba(255, 255, 255, 0.6);
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input::-moz-placeholder {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-content .section7-content-input > input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 25px;
   color: rgba(255, 255, 255, 0.6);
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input:-ms-input-placeholder {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-content .section7-content-input > input::placeholder {
   font-weight: 400;
   font-size: 25px;
   color: rgba(255, 255, 255, 0.6);
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.6);
-}
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input::placeholder {
-  font-weight: 400;
-  font-size: 25px;
-  color: rgba(255, 255, 255, 0.6);
-}
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-content .section7-content-input > input {
   font-weight: 400;
   font-size: 25px;
   width: 415px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .cheak-box {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-cheak-box {
   cursor: pointer;
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .cheak-box > .box {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-cheak-box > .cheak-box {
   margin-right: 16px;
   width: 18px;
   height: 18px;
   background-color: white;
   border-radius: 3px;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .cheak-box > .text {
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-cheak-box > .text {
   font-weight: 700;
   font-size: 25px;
   line-height: 35px;
   color: white;
 }
-#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#root .main-page .main-wrapper .main-section7 .section7-background .section7-back-color .section7-wrapper .section7-btn {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #2b9649;
   font-weight: 400;
   font-size: 35px;
@@ -824,4 +584,4 @@
   height: 90px;
   background-color: white;
   border-radius: 11px;
-}
+}/*# sourceMappingURL=index.css.map */

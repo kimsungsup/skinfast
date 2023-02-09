@@ -1,50 +1,54 @@
 #root {
-  .main {
-    &>.main-wrapper {
+  .main-page {
+    .main-wrapper {
       width: 100%;
       position: relative;
 
-      &>.section1 {
+      .main-section1 {
         width: 100%;
-        background-image: url(/public/assets/main/main-section.png);
-        background-image: -webkit-image-set(url(/public/assets/main/main-section.png) 1x,
-            url(/public/assets/main/main-section@2x.png) 2x,
-            url(/public/assets/main/main-section@3x.png) 3x);
+        background-image: url(/src/page/img/section1-background.png);
+        background-image: -webkit-image-set(
+          url(/src/page/img/section1-background.png) 1x,
+          url(/src/page/img/section1-background@2x.png) 2x,
+          url(/src/page/img/section1-background@3x.png) 3x
+        );
 
         height: 744px;
         background-repeat: no-repeat;
         background-size: cover;
 
-        .section1-set-background {
+        .main-section1-background {
           position: absolute;
           top: 330px;
           width: 100%;
           height: 416px;
-          background: linear-gradient(360deg,
-              #ffffff 0%,
-              rgba(255, 255, 255, 0) 100%);
+          background: linear-gradient(
+            360deg,
+            #ffffff 0%,
+            rgba(255, 255, 255, 0) 100%
+          );
 
           text-align: center;
 
-          &>.text {
+          .section1-text {
             padding-top: 239px;
             font-weight: 700;
             font-size: 40px;
             line-height: 75px;
           }
 
-          &>.sub {
+          .section1-sub-text {
             font-weight: 700;
             font-size: 25px;
           }
         }
       }
 
-      &>.section2 {
+      .main-section2 {
         padding-top: 73px;
         padding-bottom: 52px;
 
-        &>.wrapper {
+        .section2-wrapper {
           width: 100%;
           margin: 0 auto;
           display: flex;
@@ -52,12 +56,12 @@
           align-items: center;
           justify-content: center;
 
-          &>.scroll {
+          .section2-scroll {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            &>.scroll-wrapper {
+            .section2-scroll-wrapper {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -66,12 +70,12 @@
               border-radius: 50%;
               background: #f4f5f5;
 
-              &>img {
+              & > img {
                 width: 32px;
               }
             }
 
-            &>.text {
+            & > .text {
               margin-top: 5px;
               font-weight: 500;
               font-size: 13px;
@@ -80,49 +84,50 @@
             }
           }
 
-          &>.logo {
+          .section2-logo {
             margin-top: 87px;
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            &>img {
+            & > img {
               width: 385px;
               text-align: center;
             }
           }
 
-          &>.section2-content {
+          .section2-content {
             margin-top: 71px;
             display: grid;
             grid-template-columns: repeat(3, 360px);
 
-            &>.box {
+            .section2-content-box {
               height: 275px;
               display: flex;
               flex-direction: column;
               align-items: center;
 
-              &>img {
+              & > img {
                 width: 137px;
                 height: 137px;
                 margin-bottom: 22px;
               }
 
-              &>.title {
+              & > .title {
                 font-weight: 700;
-                line-height: 250%;
+                margin: 35px 0px 15px 0px;
+
                 font-size: 30px;
               }
 
-              &>.sub {
+              & > .sub {
                 font-weight: 500;
                 font-size: 20px;
               }
             }
           }
 
-          &>.element {
+          & > .section2-head {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -138,19 +143,19 @@
         }
       }
 
-      &>.section3 {
+      .main-section3 {
         background: #ebe9ee;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
 
-        &>.section3-top {
+        .section3-top-img {
           position: absolute;
           top: -2px;
         }
 
-        &>.section3-green {
+        .section3-background-green {
           width: 100%;
           height: 745px;
           border: 1px solid transparent;
@@ -160,14 +165,14 @@
           flex-direction: column;
           align-items: center;
 
-          &>.wrapper {
+          .section3-wrapper {
             display: flex;
             flex-direction: column;
             align-items: center;
             position: relative;
             width: 1060px;
 
-            &>img {
+            & > img {
               top: -40px;
               z-index: 10;
               width: 180px;
@@ -175,134 +180,65 @@
               position: absolute;
             }
 
-            &>.left-arrow {
+            & > .left-arrow {
               position: absolute;
-              top: 320px;
-              left: 190px;
+              top: 350px;
+              left: 220px;
             }
 
-            &>.right-arrow {
+            & > .right-arrow {
               position: absolute;
-              top: 430px;
-              right: 190px;
+              top: 410px;
+              right: 220px;
             }
 
-            &>.section3-text-1 {
-              text-align: center;
+            .section3-content {
               position: absolute;
-              left: 0;
+              display: grid;
+              grid-template-columns: repeat(2, 392px);
+              row-gap: 123px;
+              column-gap: 400px;
               top: 184px;
 
-              &>.text {
-                font-weight: 700;
-                font-size: 30px;
-                color: white;
-                font-family: 'GmarketSans';
-                margin: 5px 0 10px;
+              .section3-content-box {
+                text-align: center;
+                & > img {
+                  margin-bottom: 15px;
+                  width: 72px;
+                }
+                & > .text {
+                  font-weight: 700;
+                  margin-bottom: 15px;
+                  font-size: 30px;
+                  color: white;
+                }
+                & > .sub {
+                  font-weight: 500;
+                  font-size: 20px;
+                  color: white;
+                }
               }
-
-              &>.sub {
-                font-weight: 500;
-                font-size: 20px;
-                color: white;
-              }
-
-              &>img {
-                width: 92px;
-              }
-            }
-
-            &>.section3-text-2 {
-              width: 253px;
-              text-align: center;
-              position: absolute;
-              left: 0;
-              top: 457px;
-
-              &>.text {
-                margin: 5px 0 10px;
-                font-weight: 600;
-                font-size: 30px;
-                color: white;
-                font-family: 'GmarketSans';
-                white-space: nowrap;
-              }
-
-              &>.sub {
-                font-weight: 500;
-                font-size: 20px;
-                color: white;
-              }
-
-              &>img {
-                width: 86px;
-              }
-            }
-
-            &>.section3-text-3 {
-              text-align: center;
-              position: absolute;
-              right: 0;
-              top: 234px;
-
-              &>.text {
-                font-weight: 600;
-                font-size: 30px;
-                color: white;
-                font-family: 'GmarketSans';
-                margin: 5px 0 10px;
-              }
-
-              &>.sub {
-                font-weight: 500;
-                font-size: 20px;
-                color: white;
-              }
-
-              &>img {
-                width: 66px;
-              }
-            }
-
-            &>.section3-text-4 {
-              width: 290px;
-              text-align: center;
-              position: absolute;
-              right: 0;
-              top: 507px;
-
-              &>.text {
-                font-weight: 600;
-                font-size: 30px;
-                color: white;
-                font-family: 'GmarketSans';
-                margin: 5px 0 10px;
-              }
-
-              &>.sub {
-                font-weight: 500;
-                font-size: 20px;
-                color: white;
-              }
-
-              &>img {
-                width: 72px;
+              .sodium {
+                margin-top: 40px;
+                & > img {
+                  width: 66px;
+                }
               }
             }
           }
         }
 
-        &>.section3-bottom {
-          &>img {
+        .section3-bottom-img {
+          & > img {
             width: 100%;
           }
         }
       }
 
-      &>.section4 {
+      .main-section4 {
         height: 1659px;
 
-        &>.wrapper {
+        .section4-wrapper {
           height: 961px;
           background: #eae8ed;
           display: flex;
@@ -310,39 +246,41 @@
           align-items: center;
           position: relative;
 
-          &>.section4-back {
+          .section4-back-img {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            &>.text {
+            & > .text {
               padding-top: 133px;
               text-align: center;
               font-weight: 300;
               font-size: 50px;
 
-              &>span {
+              & > span {
                 font-weight: 400;
               }
             }
 
-            &>img {
+            & > img {
               margin-top: 115px;
               width: 436px;
             }
           }
 
-          &>.section4-back-set {
+          .section4-gradation {
             width: 100%;
             position: absolute;
             top: 961px;
             height: 698px;
-            background: linear-gradient(180deg,
-                #e8e6eb 0%,
-                rgba(235, 233, 238, 0) 100%);
+            background: linear-gradient(
+              180deg,
+              #e8e6eb 0%,
+              rgba(235, 233, 238, 0) 100%
+            );
           }
 
-          &>.section4-content {
+          .section4-content {
             position: absolute;
             z-index: 10;
             display: grid;
@@ -350,8 +288,8 @@
             top: 817px;
             grid-template-columns: repeat(3, 364px);
 
-            &>.box {
-              &>.title {
+            .section4-content-box {
+              & > .title {
                 margin-bottom: 21px;
                 display: flex;
                 align-items: center;
@@ -378,11 +316,11 @@
                 margin-bottom: -40px;
               }
 
-              &>img {
+              & > img {
                 margin-bottom: 44px;
               }
 
-              &>.sub {
+              & > .sub {
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 32px;
@@ -393,14 +331,14 @@
         }
       }
 
-      &>.section5 {
+      .main-section5 {
         padding-top: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
-        &>.element {
+        .section5-head {
           width: 177px;
           height: 38px;
           background: rgba(0, 0, 0, 0.7);
@@ -413,23 +351,23 @@
           font-size: 16px;
         }
 
-        &>.text {
+        .section5-text {
           margin-top: 60px;
           font-weight: 300;
           font-size: 50px;
           line-height: 75px;
 
-          &>span {
+          & > span {
             font-weight: 400;
             width: 20px;
           }
 
-          &>.set {
+          & > .set {
             text-emphasis: filled #2b9649;
           }
         }
 
-        &>.section5-content {
+        & > .section5-content {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -437,7 +375,7 @@
           position: relative;
           margin-top: 80px;
 
-          &>.text-box {
+          .section5-text-box {
             width: 630px;
             height: 139px;
             background: #2b9649;
@@ -446,20 +384,20 @@
             align-items: center;
             justify-content: center;
 
-            &>.text {
+            & > .text {
               text-align: center;
               color: white;
               font-weight: 400;
               font-size: 30px;
               line-height: 45px;
 
-              &>span {
-                font-weight: 500;
+              & > span {
+                font-weight: 700;
               }
             }
           }
 
-          &>img {
+          & > img {
             top: 135px;
             position: absolute;
             width: 406px;
@@ -467,19 +405,21 @@
             transform: translate(-50%, 0%);
           }
 
-          &>.section5-back {
+          .section5-background {
             position: relative;
             width: 100%;
             height: 610px;
             margin-top: 420px;
-            background: linear-gradient(180deg,
-                #ef9279 0%,
-                #eac5a6 42.21%,
-                #ffffff 90.32%);
+            background: linear-gradient(
+              180deg,
+              #ef9279 0%,
+              #eac5a6 42.21%,
+              #ffffff 90.32%
+            );
             z-index: 10;
           }
 
-          &>.back-circle {
+          .section5-back-circle {
             top: 430px;
             position: absolute;
             width: 441px;
@@ -488,13 +428,13 @@
             border-radius: 50%;
           }
 
-          &>.section5-set-circle {
+          .section5-circle {
             position: absolute;
             top: 357px;
             z-index: 100;
           }
 
-          &>.section5-set {
+          .section5-set {
             position: absolute;
             top: 600px;
             z-index: 20;
@@ -502,8 +442,8 @@
         }
       }
 
-      &>.section6 {
-        &>.wrapper {
+      .main-section6 {
+        .section6-wrapper {
           width: 1326px;
           margin: 0 auto;
           display: flex;
@@ -515,7 +455,7 @@
             flex-direction: column;
             align-items: center;
 
-            &>.element {
+            .section6-head {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -529,13 +469,13 @@
               margin-bottom: 32px;
             }
 
-            &>.text {
+            & > .text {
               font-weight: 700;
               font-size: 30px;
               line-height: 75px;
             }
 
-            &>.sub {
+            & > .sub {
               font-weight: 500;
               font-size: 20px;
               line-height: 35px;
@@ -548,13 +488,13 @@
             gap: 26px;
             position: relative;
 
-            &>.box {
+            .section6-content-box {
               display: flex;
               flex-direction: column;
 
               align-items: center;
 
-              &>.title {
+              & > .title {
                 position: absolute;
                 display: flex;
                 align-items: center;
@@ -567,11 +507,11 @@
                 background: rgba(43, 150, 73, 0.6);
               }
 
-              &>img {
+              & > img {
                 margin-bottom: 11px;
               }
 
-              &>.sub {
+              & > .sub {
                 font-weight: 500;
                 font-size: 20px;
                 line-height: 35px;
@@ -583,37 +523,37 @@
             margin-top: 184px;
             width: 100%;
 
-            &>.text {
+            & > .text {
               font-weight: 700;
               font-size: 30px;
               line-height: 75px;
             }
 
-            &>.section6-content-wrapper {
+            .section6-content-wrapper {
               display: flex;
 
-              &>.section6-img {
+              .section6-img {
                 width: 484px;
                 height: 78px;
                 margin-left: 129px;
                 margin-right: 172px;
                 margin-top: 72px;
 
-                &>img {
+                & > img {
                   width: 78px;
                   height: 484px;
                 }
               }
 
-              &>.section6-content-detail {
+              .section6-content-detail {
                 padding-bottom: 334px;
 
-                &>.box {
+                .section6-detail-box {
                   width: 951px;
                   border-top: 1px solid;
                   display: flex;
 
-                  &>.text {
+                  & > .text {
                     margin-left: 10px;
                     width: 152px;
                     margin-right: 22px;
@@ -623,7 +563,7 @@
                     line-height: 35px;
                   }
 
-                  &>.sub {
+                  & > .sub {
                     padding: 18px 0px 19px 0px;
                     font-weight: 400;
                     font-size: 25px;
@@ -636,57 +576,60 @@
         }
       }
 
-      &>.section7 {
-        &>.section7-back {
+      .main-section7 {
+        .section7-background {
           position: relative;
           width: 100%;
-          background-image: url(/public/assets/main/main-section.png);
-          background-image: -webkit-image-set(url(/public/assets/main/main-section.png) 1x,
-              url(/public/assets/main/main-section@2x.png) 2x,
-              url(/public/assets/main/main-section@3x.png) 3x);
+          background-image: url(/src/page/img/section1-background.png);
+          background-image: -webkit-image-set(
+            url(/src/page/img/section1-background.png) 1x,
+            url(/src/page/img/section1-background@2x.png) 2x,
+            url(/src/page/img/section1-background@3x.png) 3x
+          );
 
           height: 1164px;
           background-repeat: no-repeat;
           background-size: cover;
 
-          &>.section7-back-color {
+          .section7-back-color {
             width: 100%;
             height: 1164px;
             position: absolute;
-            background: linear-gradient(90deg,
-                #2b9649 41.53%,
-                rgba(43, 150, 73, 0) 100%);
+            background: linear-gradient(
+              90deg,
+              #2b9649 41.53%,
+              rgba(43, 150, 73, 0) 100%
+            );
 
-            &>.wrapper {
+            .section7-wrapper {
               padding-top: 49px;
               padding-left: 66px;
 
-              &>.title {
+              & > .title {
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 75px;
                 color: white;
               }
 
-              &>.text {
+              & > .text {
                 font-weight: 300;
                 font-size: 50px;
                 line-height: 75px;
                 color: white;
 
-                &>span {
-                  margin-bottom: 20px;
-                  font-weight: 300;
+                & > span {
+                  font-weight: 400;
                 }
               }
 
-              &>.section7-content {
+              .section7-content {
                 margin-top: 55px;
                 display: flex;
                 flex-direction: column;
                 gap: 27px;
 
-                &>.box {
+                .section7-content-input {
                   padding-left: 31px;
                   display: flex;
                   align-items: center;
@@ -696,7 +639,7 @@
                   height: 90px;
                   border-radius: 11px;
 
-                  &>.text {
+                  & > .text {
                     width: 87px;
                     margin-right: 32px;
                     font-weight: 700;
@@ -704,13 +647,13 @@
                     color: white;
                   }
 
-                  &>input::placeholder {
+                  & > input::placeholder {
                     font-weight: 400;
                     font-size: 25px;
                     color: rgba(255, 255, 255, 0.6);
                   }
 
-                  &>input {
+                  & > input {
                     font-weight: 400;
                     font-size: 25px;
                     width: 415px;
@@ -720,13 +663,13 @@
                 }
               }
 
-              &>.cheak-box {
+              .section7-cheak-box {
                 cursor: pointer;
                 margin-top: 30px;
                 display: flex;
                 align-items: center;
 
-                &>.box {
+                & > .cheak-box {
                   margin-right: 16px;
                   width: 18px;
                   height: 18px;
@@ -734,7 +677,7 @@
                   border-radius: 3px;
                 }
 
-                &>.text {
+                & > .text {
                   font-weight: 700;
                   font-size: 25px;
                   line-height: 35px;
@@ -742,7 +685,7 @@
                 }
               }
 
-              &>.btn {
+              .section7-btn {
                 display: flex;
                 align-items: center;
                 justify-content: center;

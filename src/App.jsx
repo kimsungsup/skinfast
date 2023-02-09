@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./core/core.css";
 import Header from "./components/header/Header";
-import MainPage from "./page/main/MainPage";
+import MainPage from "./page/main/main-page";
 
 function App() {
   return (

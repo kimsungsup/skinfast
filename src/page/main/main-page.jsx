@@ -2,32 +2,35 @@ import React from "react";
 import "./css/index.css";
 function MainPage() {
   return (
-    <main className="main">
+    <main className="main-page">
       <div className="main-wrapper">
-        <div className="section1">
-          <div className="section1-set-background">
-            <div className="text">스킨패스트</div>
-            <div className="sub">사용은 간편하게, 치료는 빠르게</div>
+        <div className="main-section1">
+          <div className="main-section1-background">
+            <div className="section1-text">스킨패스트</div>
+            <div className="section1-sub-text">
+              사용은 간편하게, 치료는 빠르게
+            </div>
           </div>
         </div>
-        <div className="section2">
-          <div className="wrapper">
-            <div className="scroll">
-              <div className="scroll-wrapper">
+
+        <div className="main-section2">
+          <div className="section2-wrapper">
+            <div className="section2-scroll">
+              <div className="section2-scroll-wrapper">
                 <img src="/assets/main/scroll-down.svg" alt="logo" />
               </div>
 
               <div className="text">스크롤 내리기</div>
             </div>
 
-            <div className="logo">
+            <div className="section2-logo">
               <img src="/assets/common/logo-green.svg" alt="logo" />
             </div>
 
             <div className="section2-content">
               {section2.map((item, index) => {
                 return (
-                  <div key={index} className="box">
+                  <div key={index} className="section2-content-box">
                     <img src={item.img} alt="logo" />
                     <div className="title">{item.title}</div>
                     <div className="sub">{item.sub}</div>
@@ -36,19 +39,19 @@ function MainPage() {
               })}
             </div>
 
-            <div className="element">구성요소</div>
+            <div className="section2-head">구성요소</div>
           </div>
         </div>
 
-        <div className="section3">
-          <div className="section3-top">
+        <div className="main-section3">
+          <div className="section3-top-img">
             <img src="/assets/main/section3-top.svg" alt="back" />
           </div>
-          <div className="section3-green">
-            <div className="wrapper">
+          <div className="section3-background-green">
+            <div className="section3-wrapper">
               <img
                 src="/assets/main/syringe.png"
-                alt="img"
+                alt="주사기"
                 srcSet="/assets/main/syringe@2x.png 2x, /assets/main/syringe@3x.png 3x"
               />
               <div className="left-arrow">
@@ -59,40 +62,31 @@ function MainPage() {
                 <img src="/assets/main/section3-arrow2.svg" alt="arrow" />
               </div>
 
-              <div className="section3-text-1">
-                <img src="/assets/main/section3-icon4.svg" alt="icon" />
-                <div className="text">Sodium Hyaluronate</div>
-                <div className="sub">보습 상처치유 개선</div>
-              </div>
-
-              <div className="section3-text-2">
-                <img src="/assets/main/section3-icon5.svg" alt="icon" />
-                <div className="text">Sodium alginate</div>
-                <div className="sub">독소제거, 점증효과</div>
-              </div>
-
-              <div className="section3-text-3">
-                <img src="/assets/main/section3-icon6.svg" alt="icon" />
-                <div className="text">Hydroxy Ethyl cellulose</div>
-                <div className="sub">점증효과</div>
-              </div>
-
-              <div className="section3-text-4">
-                <img src="/assets/main/section3-icon7.svg" alt="icon" />
-                <div className="text">Glycerine</div>
-                <div className="sub">피부장막 개선</div>
+              <div className="section3-content">
+                {section3.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className={`section3-content-box ${item.type}`}
+                    >
+                      <img src={item.img} alt="logo" />
+                      <div className="text font-type">{item.text}</div>
+                      <div className="sub">{item.sub}</div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
-          <div className="section3-bottom">
+          <div className="section3-bottom-img">
             <img src="/assets/main/section3-bottom.svg" alt="back" />
           </div>
         </div>
 
-        <div className="section4">
-          <div className="wrapper">
-            <div className="section4-back">
-              <div className="text">
+        <div className="main-section4">
+          <div className="section4-wrapper">
+            <div className="section4-back-img">
+              <div className="text font-type">
                 이런 분들께 <span>스킨패스트를 추천</span>합니다.
               </div>
 
@@ -102,12 +96,12 @@ function MainPage() {
                 alt="img"
               />
             </div>
-            <div className="section4-back-set"></div>
+            <div className="section4-gradation"></div>
 
             <div className="section4-content">
               {section4.map((item, index) => {
                 return (
-                  <div key={index} className="box">
+                  <div key={index} className="section4-content-box">
                     <div className="title">{item.title}</div>
                     <img src={item.img} alt="logo" srcSet={item.srcSet} />
                     <div className="sub">{item.sub}</div>
@@ -118,46 +112,39 @@ function MainPage() {
           </div>
         </div>
 
-        <div className="section5">
-          <div className="element">효과적인 상처 관리</div>
-          <div className="text">
-            오늘부터 <span>상처에</span>{" "}
-            <span className="set">스킨패스트 </span>하세요
+        <div className="main-section5">
+          <div className="section5-head">효과적인 상처 관리</div>
+          <div className="section5-text font-type">
+            오늘부터 <span>상처에</span> <span>스킨패스트 </span>하세요
           </div>
 
-          <div className="section5-content">
-            <div className="text-box">
-              <div className="text">
+          <div className="section5-content ">
+            <div className="section5-text-box">
+              <div className="text font-type">
                 실험을 통해 찾아낸 <br />
                 가장 적절한 <span>고형분 함량 4%</span>
               </div>
             </div>
             <img src="/assets/main/section5-arrow.svg" alt="icon" />
 
-            <div className="section5-set-circle">
+            <div className="section5-circle">
               <img src="/assets/main/section5-set1.svg" alt="icon" />
             </div>
 
-            <div className="section5-back"></div>
+            <div className="section5-background"></div>
             <img
               className="section5-set"
               src="/assets/main/section5-set2.svg"
               alt="icon"
             />
-            <div className="back-circle"></div>
-
-            {/* <img
-              src="/assets/main/section5-img.svg"
-              alt="img"
-              className="img"
-            /> */}
+            <div className="section5-back-circle"></div>
           </div>
         </div>
 
-        <div className="section6">
-          <div className="wrapper">
+        <div className="main-section6">
+          <div className="section6-wrapper">
             <div className="section6-text">
-              <div className="element">PRODUCT DETAIL</div>
+              <div className="section6-head">PRODUCT DETAIL</div>
               <div className="text">스킨패스트 제형 및 질감 디테일</div>
               <div className="sub">
                 모니터나 사용환경에 따라 제형사진은 실제와 다를 수 있으며,{" "}
@@ -171,7 +158,7 @@ function MainPage() {
             <div className="section6-content">
               {section6.map((item, index) => {
                 return (
-                  <div key={index} className="box">
+                  <div key={index} className="section6-content-box">
                     <div className="title">{item.title}</div>
                     <img src={item.img} alt="logo" srcSet={item.srcSet} />
                     <div className="sub">{item.sub}</div>
@@ -194,7 +181,7 @@ function MainPage() {
                 <div className="section6-content-detail">
                   {detail.map((item, index) => {
                     return (
-                      <div key={index} className="box">
+                      <div key={index} className="section6-detail-box">
                         <div className="text">{item.text}</div>
                         <div className="sub">{item.sub}</div>
                       </div>
@@ -206,12 +193,12 @@ function MainPage() {
           </div>
         </div>
 
-        <div className="section7">
-          <div className="section7-back">
+        <div className="main-section7">
+          <div className="section7-background">
             <div className="section7-back-color">
-              <div className="wrapper">
+              <div className="section7-wrapper">
                 <div className="title">CONTACT US</div>
-                <div className="text">
+                <div className="text font-type">
                   전문병의원, 약국 등 <br />
                   스킨패스트와 <span>제휴가 필요 </span>하다면 <br />
                   아래 연락주세요
@@ -220,7 +207,7 @@ function MainPage() {
                 <div className="section7-content">
                   {contact.map((item, index) => {
                     return (
-                      <div key={index} className="box">
+                      <div key={index} className="section7-content-input ">
                         <div className="text">{item.text}</div>
                         <input placeholder={item.sub} type="text" />
                       </div>
@@ -228,14 +215,16 @@ function MainPage() {
                   })}
                 </div>
 
-                <div className="cheak-box">
-                  <div className="box"></div>
+                <div className="section7-cheak-box">
+                  <div className="cheak-box"></div>
                   <div className="text">
                     상담을 위한 개인정보 사용에 동의합니다
                   </div>
                 </div>
 
-                <button className="btn">상담 신청하기</button>
+                <button className="section7-btn font-type">
+                  상담 신청하기
+                </button>
               </div>
             </div>
           </div>
@@ -378,5 +367,29 @@ const contact = [
   {
     text: "연락처",
     sub: "전화번호를 입력해주세요",
+  },
+];
+
+const section3 = [
+  {
+    img: "/assets/main/section3-icon4.svg",
+    text: "Sodium Hyaluronate",
+    sub: "보습 상처치유 개선",
+  },
+  {
+    img: "/assets/main/section3-icon6.svg",
+    text: "Hydroxy Ethyl cellulose",
+    sub: "점증효과",
+    type: "sodium",
+  },
+  {
+    img: "/assets/main/section3-icon5.svg",
+    text: "Sodium alginate",
+    sub: "독소제거, 점증효과",
+  },
+  {
+    img: "/assets/main/section3-icon7.svg",
+    text: "Glycerine",
+    sub: "피부장막 개선",
   },
 ];
