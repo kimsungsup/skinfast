@@ -85,6 +85,17 @@ function MainPage() {
 
         <div className="main-section4">
           <div className="section4-wrapper">
+            <div className="section4-content-mb">
+              {section3.map((item, index) => {
+                return (
+                  <div key={index} className={`section4-content-box-mb`}>
+                    <img src={item.imgMb} alt="logo" />
+                    <div className="text font-type">{item.text}</div>
+                    <div className="sub">{item.sub}</div>
+                  </div>
+                );
+              })}
+            </div>
             <div className="section4-back-img">
               <div className="text font-type">
                 이런 분들께 <span>스킨패스트를 추천</span>합니다.
@@ -115,7 +126,8 @@ function MainPage() {
         <div className="main-section5">
           <div className="section5-head">효과적인 상처 관리</div>
           <div className="section5-text font-type">
-            오늘부터 <span>상처에</span> <span>스킨패스트 </span>하세요
+            오늘부터 <span>상처에</span>{" "}
+            <span className="set">스킨패스트 </span>하세요
           </div>
 
           <div className="section5-content ">
@@ -125,7 +137,16 @@ function MainPage() {
                 가장 적절한 <span>고형분 함량 4%</span>
               </div>
             </div>
-            <img src="/assets/main/section5-arrow.svg" alt="icon" />
+            <img
+              src="/assets/main/section5-arrow.svg"
+              alt="icon"
+              className="arrow-pc"
+            />
+            <img
+              src="/assets/common/arrow-mb.svg"
+              alt="icon"
+              className="arrow-mb"
+            />
 
             <div className="section5-circle">
               <img src="/assets/main/section5-set1.svg" alt="icon" />
@@ -147,11 +168,14 @@ function MainPage() {
               <div className="section6-head">PRODUCT DETAIL</div>
               <div className="text">스킨패스트 제형 및 질감 디테일</div>
               <div className="sub">
-                모니터나 사용환경에 따라 제형사진은 실제와 다를 수 있으며,{" "}
-                <br />
-                보관상태와 제조일자에 따라 다르게 느껴질 수 있습니다. 제품구매에{" "}
-                <br />
-                참고를 위한 안내 사항임을 참조바랍니다.
+                모니터나 사용환경에 따라 <br className="mb" />
+                제형사진은 실제와 다를 수 있으며, <br className="pc" />{" "}
+                <br className="mb" />
+                보관상태와 제조일자에 따라 <br className="mb" />
+                다르게 느껴질 수 있습니다. <br className="pc" />
+                <br className="mb" /> 제품구매에 참고를 위한{" "}
+                <br className="mb" />
+                안내 사항임을 참조바랍니다.
               </div>
             </div>
 
@@ -181,7 +205,10 @@ function MainPage() {
                 <div className="section6-content-detail">
                   {detail.map((item, index) => {
                     return (
-                      <div key={index} className="section6-detail-box">
+                      <div
+                        key={index}
+                        className={`section6-detail-box ${item.type}`}
+                      >
                         <div className="text">{item.text}</div>
                         <div className="sub">{item.sub}</div>
                       </div>
@@ -321,7 +348,13 @@ const detail = [
   },
   {
     text: "사용기한",
-    sub: "제품 별도 표기 (제조일로부터 36개월)",
+    sub: (
+      <>
+        제품 별도 표기 <br className="mb" />
+        (제조일로부터 36개월)
+      </>
+    ),
+    type: "padding",
   },
 
   {
@@ -330,7 +363,13 @@ const detail = [
   },
   {
     text: "화장품제조업자",
-    sub: "제휴업체 (정확한 확인이 필요한 경우 별도 문의)",
+    sub: (
+      <>
+        제휴업체 <br className="mb" />
+        (정확한 확인이 필요한 경우 별도 문의)
+      </>
+    ),
+    type: "padding",
   },
   {
     text: "책임판매업자",
@@ -344,10 +383,14 @@ const detail = [
     text: "전성분",
     sub: (
       <>
-        Sodium Hyaluronat, Hydroxy Ethyl cellulose(HEC), Sodium algina
-        <br /> Glycerin, Lactic acid solutio, 주사용수
+        Sodium Hyaluronat, Hydroxy <br className="mb" /> Ethyl cellulose(HEC),
+        Sodium <br className="mb" /> algina
+        <br className="pc" /> Glycerin, Lactic acid <br className="mb" />{" "}
+        solutio, 주사용수
       </>
     ),
+
+    type: "line",
   },
 ];
 
@@ -373,22 +416,26 @@ const contact = [
 const section3 = [
   {
     img: "/assets/main/section3-icon4.svg",
+    imgMb: "/assets/main/section3-icon4-mb.svg",
     text: "Sodium Hyaluronate",
     sub: "보습 상처치유 개선",
   },
   {
     img: "/assets/main/section3-icon6.svg",
+    imgMb: "/assets/main/section3-icon5-mb.svg",
     text: "Hydroxy Ethyl cellulose",
     sub: "점증효과",
     type: "sodium",
   },
   {
     img: "/assets/main/section3-icon5.svg",
+    imgMb: "/assets/main/section3-icon6-mb.svg",
     text: "Sodium alginate",
     sub: "독소제거, 점증효과",
   },
   {
     img: "/assets/main/section3-icon7.svg",
+    imgMb: "/assets/main/section3-icon7-mb.svg",
     text: "Glycerine",
     sub: "피부장막 개선",
   },

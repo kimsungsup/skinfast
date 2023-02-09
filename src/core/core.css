@@ -17,7 +17,6 @@ button {
 }
 
 button:hover {
-  -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   opacity: 0.7;
 }
@@ -29,13 +28,15 @@ button:hover {
 }
 
 a {
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: black;
   list-style: none;
 }
 
 link {
-  text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
   color: black;
   list-style: none;
 }
@@ -50,18 +51,11 @@ textarea {
   border: 0;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   resize: none;
   font-family: "pretendard", sans-serif;
   background-color: transparent;
   color: white;
-}
-input::-webkit-input-placeholder, p::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  font-family: "pretendard", sans-serif;
-  color: #949494;
-  font-weight: 400;
-  font-size: 16px;
 }
 input::-moz-placeholder, p::-moz-placeholder, textarea::-moz-placeholder {
   font-family: "pretendard", sans-serif;
@@ -70,12 +64,6 @@ input::-moz-placeholder, p::-moz-placeholder, textarea::-moz-placeholder {
   font-size: 16px;
 }
 input:-ms-input-placeholder, p:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  font-family: "pretendard", sans-serif;
-  color: #949494;
-  font-weight: 400;
-  font-size: 16px;
-}
-input::-ms-input-placeholder, p::-ms-input-placeholder, textarea::-ms-input-placeholder {
   font-family: "pretendard", sans-serif;
   color: #949494;
   font-weight: 400;
@@ -104,10 +92,9 @@ textarea:focus {
   scrollbar-width: none;
   -webkit-font-smoothing: antialiased;
   -ms-overflow-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .font-type {
   font-family: "GmarketSans", sans-serif !important;
-}
+}/*# sourceMappingURL=core.css.map */
