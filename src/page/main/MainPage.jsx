@@ -10,7 +10,6 @@ function MainPage() {
             <div className="sub">사용은 간편하게, 치료는 빠르게</div>
           </div>
         </div>
-
         <div className="section2">
           <div className="wrapper">
             <div className="scroll">
