@@ -9,9 +9,15 @@
 }
 #root .header .header-wrapper {
   margin: 0 36px 0px 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 32px;
 }
 #root .header .header-wrapper > .img > img {
@@ -24,9 +30,15 @@
   border-radius: 23px;
   width: 184px;
   height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #root .header .header-wrapper > .header-buy > img {
   width: 24px;
@@ -37,4 +49,4 @@
   font-weight: 700;
   font-size: 16px;
   color: white;
-}/*# sourceMappingURL=index.css.map */
+}

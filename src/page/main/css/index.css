@@ -15,6 +15,7 @@
   top: 330px;
   width: 100%;
   height: 416px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(360deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   text-align: center;
 }
@@ -35,20 +36,42 @@
 #root .main > .main-wrapper > .section2 > .wrapper {
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #root .main > .main-wrapper > .section2 > .wrapper > .scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section2 > .wrapper > .scroll > .scroll-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -66,9 +89,16 @@
 }
 #root .main > .main-wrapper > .section2 > .wrapper > .logo {
   margin-top: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section2 > .wrapper > .logo > img {
   width: 385px;
@@ -81,9 +111,16 @@
 }
 #root .main > .main-wrapper > .section2 > .wrapper > .section2-content > .box {
   height: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section2 > .wrapper > .section2-content > .box > img {
   width: 137px;
@@ -100,9 +137,15 @@
   font-size: 20px;
 }
 #root .main > .main-wrapper > .section2 > .wrapper > .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   margin-top: 145px;
   width: 143px;
@@ -114,9 +157,16 @@
 }
 #root .main > .main-wrapper > .section3 {
   background: #ebe9ee;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 #root .main > .main-wrapper > .section3 > .section3-top {
@@ -129,14 +179,28 @@
   border: 1px solid transparent;
   border-top: 50px;
   background: #2b9649;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   width: 1060px;
 }
@@ -166,8 +230,9 @@
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-1 > .text {
   font-weight: 700;
   font-size: 30px;
-  line-height: 75px;
   color: white;
+  font-family: "GmarketSans";
+  margin: 5px 0 10px;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-1 > .sub {
   font-weight: 500;
@@ -185,10 +250,12 @@
   top: 457px;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-2 > .text {
-  font-weight: 500;
+  margin: 5px 0 10px;
+  font-weight: 600;
   font-size: 30px;
-  line-height: 70px;
   color: white;
+  font-family: "GmarketSans";
+  white-space: nowrap;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-2 > .sub {
   font-weight: 500;
@@ -205,10 +272,11 @@
   top: 234px;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-3 > .text {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
-  line-height: 70px;
   color: white;
+  font-family: "GmarketSans";
+  margin: 5px 0 10px;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-3 > .sub {
   font-weight: 500;
@@ -226,10 +294,11 @@
   top: 507px;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-4 > .text {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
-  line-height: 70px;
   color: white;
+  font-family: "GmarketSans";
+  margin: 5px 0 10px;
 }
 #root .main > .main-wrapper > .section3 > .section3-green > .wrapper > .section3-text-4 > .sub {
   font-weight: 500;
@@ -248,15 +317,29 @@
 #root .main > .main-wrapper > .section4 > .wrapper {
   height: 961px;
   background: #eae8ed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 #root .main > .main-wrapper > .section4 > .wrapper > .section4-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section4 > .wrapper > .section4-back > .text {
   padding-top: 133px;
@@ -276,6 +359,7 @@
   position: absolute;
   top: 961px;
   height: 698px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e8e6eb), to(rgba(235, 233, 238, 0)));
   background: linear-gradient(180deg, #e8e6eb 0%, rgba(235, 233, 238, 0) 100%);
 }
 #root .main > .main-wrapper > .section4 > .wrapper > .section4-content {
@@ -288,9 +372,15 @@
 }
 #root .main > .main-wrapper > .section4 > .wrapper > .section4-content > .box > .title {
   margin-bottom: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 349px;
   height: 67px;
   background: rgba(0, 0, 0, 0.8);
@@ -321,19 +411,34 @@
 }
 #root .main > .main-wrapper > .section5 {
   padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #root .main > .main-wrapper > .section5 > .element {
   width: 177px;
   height: 38px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -353,9 +458,16 @@
           text-emphasis: filled #2b9649;
 }
 #root .main > .main-wrapper > .section5 > .section5-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: relative;
   margin-top: 80px;
@@ -364,10 +476,19 @@
   width: 630px;
   height: 139px;
   background: #2b9649;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #root .main > .main-wrapper > .section5 > .section5-content > .text-box > .text {
   text-align: center;
@@ -384,13 +505,15 @@
   position: absolute;
   width: 406px;
   left: 50%;
-  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 #root .main > .main-wrapper > .section5 > .section5-content > .section5-back {
   position: relative;
   width: 100%;
   height: 610px;
   margin-top: 420px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ef9279), color-stop(42.21%, #eac5a6), color-stop(90.32%, #ffffff));
   background: linear-gradient(180deg, #ef9279 0%, #eac5a6 42.21%, #ffffff 90.32%);
   z-index: 10;
 }
@@ -415,19 +538,37 @@
 #root .main > .main-wrapper > .section6 > .wrapper {
   width: 1326px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-text {
   margin-bottom: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-text > .element {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   font-weight: 700;
   font-size: 16px;
@@ -449,20 +590,35 @@
   text-align: center;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 26px;
   position: relative;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-content > .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-content > .box > .title {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 700;
   font-size: 20px;
   color: white;
@@ -488,6 +644,8 @@
   line-height: 75px;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-img {
@@ -507,6 +665,8 @@
 #root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-content-detail > .box {
   width: 951px;
   border-top: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #root .main > .main-wrapper > .section6 > .wrapper .section6-detail > .section6-content-wrapper > .section6-content-detail > .box > .text {
@@ -537,6 +697,7 @@
   width: 100%;
   height: 1164px;
   position: absolute;
+  background: -webkit-gradient(linear, left top, right top, color-stop(41.53%, #2b9649), to(rgba(43, 150, 73, 0)));
   background: linear-gradient(90deg, #2b9649 41.53%, rgba(43, 150, 73, 0) 100%);
 }
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper {
@@ -561,14 +722,23 @@
 }
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content {
   margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 27px;
 }
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box {
   padding-left: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid white;
   width: 704px;
   height: 90px;
@@ -581,12 +751,22 @@
   font-size: 25px;
   color: white;
 }
+#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input::-moz-placeholder {
   font-weight: 400;
   font-size: 25px;
   color: rgba(255, 255, 255, 0.6);
 }
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+#root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .section7-content > .box > input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 25px;
   color: rgba(255, 255, 255, 0.6);
@@ -606,8 +786,12 @@
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .cheak-box {
   cursor: pointer;
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .cheak-box > .box {
   margin-right: 16px;
@@ -623,9 +807,15 @@
   color: white;
 }
 #root .main > .main-wrapper > .section7 > .section7-back > .section7-back-color > .wrapper > .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #2b9649;
   font-weight: 400;
   font-size: 35px;
@@ -634,4 +824,4 @@
   height: 90px;
   background-color: white;
   border-radius: 11px;
-}/*# sourceMappingURL=index.css.map */
+}
