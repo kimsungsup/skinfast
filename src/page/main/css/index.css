@@ -840,7 +840,7 @@
   #root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-text > .text {
     text-align: center;
     line-height: 45px;
-    width: 190px;
+    width: 200px;
   }
   #root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-text > .sub {
     margin-top: 21px;
@@ -874,7 +874,7 @@
     width: 343px;
   }
   #root .main-page .main-wrapper .main-section6 .section6-wrapper .section6-detail .section6-content-wrapper .section6-content-detail .section6-detail-box > .text {
-    width: 73px;
+    width: 74px;
     font-weight: 700;
     font-size: 12px;
     margin-right: 29px;

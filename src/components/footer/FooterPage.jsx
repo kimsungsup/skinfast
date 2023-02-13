@@ -11,7 +11,7 @@ function FooterPage() {
         <div className="footer-text-box">
           <div className="footer-left">
             <div className="text">
-              낫다 바이오텍 | 대표 허태욱 | 사업자등록번호 123-12-01234 <br />
+              낫다 바이오텍 | 사업자등록번호 123-12-01234 <br />
               통신판매업등록번호 2022-2345-0282
             </div>
 

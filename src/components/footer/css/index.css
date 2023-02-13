@@ -64,5 +64,6 @@
   }
   #root .footer .footer-wrapper .footer-text-box .footer-left {
     margin-bottom: 10px;
+    margin-right: unset;
   }
 }/*# sourceMappingURL=index.css.map */
